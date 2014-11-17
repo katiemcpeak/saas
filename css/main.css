@@ -1,0 +1,286 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media only screen and (min-width: 60em) {
+
+    html {
+        font-size: 110%;
+    }
+    
+}
+
+@media only screen and (min-width: 90em) {
+
+    html {
+        font-size: 120%;
+    }
+    
+}
+
+@media only screen and (min-width: 120em) {
+
+    html {
+        font-size: 130%;
+    }
+    
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p:first-child {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+}
+
+a:focus {
+ outline: 3px solid #000;   
+}
+
+.skip-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skip-links a {
+    position: absolute;
+    top: -10em;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 0.75em;
+    font-size: 1.25em;
+}
+
+.skip-links a:focus {
+    top: 0;
+}
+
+.logo { 
+    height: 6rem;
+    width: auto;
+    margin: 2rem auto;    
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.billboard {
+    margin: 0;
+    overflow: hidden;
+    padding-top: 15rem;
+    background-color: black;
+    background-image: url(../images/guitarphotography.jpg);
+    background-repeat: no-repeat;
+    background-size: 40rem;
+    background-position: center center;
+}
+
+h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: grey;
+    text-align: center;
+    background-color: rgba(192,192,192,0.3);
+    padding: .25rem 0;
+}
+
+h3 {
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-family: 'Great Vibes', cursive;
+}
+
+.nav {
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav a,
+.nav a:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav .nav-current,
+.nav .nav-current:link,
+.nav .nav-current:visited {
+    background-color: #E0E0E0;
+    color: #fff;
+}
+
+.backgroundcolor {
+    background-color: #E0E0E0;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media only screen and (min-width: 25em) {
+
+    .nav {
+        text-align: center;
+    }
+    
+    .nav li {
+        display: inline-block;
+        border: 0;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+    
+    .navfooter li::after {
+        content:" · ";
+    }
+    
+    .navfooter a {
+        display: inline; 
+    }
+    
+    .navfooter :last-child::after {
+        content: none;
+    }
+    
+    .navfooter {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 50em) {
+    
+    .nav {
+        float: left;
+    }
+    
+    h1 {
+        float: left;
+    }
+    
+    .copyright {
+        text-align: left;
+    }
+    
+    .copyrightul {
+        float: right;
+    }
+        
+}
+
+@media only screen and (min-width: 60em) {
+    
+    .copyright {
+        text-align: left;
+    }
+    
+    .copyrightul {
+        float: right;
+    }
+    
+    dt {
+        float: left;
+        clear: left;
+        width: 9rem;
+    }
+    
+    dd {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    
+    dl {
+        overflow: hidden;
+    }
+        
+}
+
+.interested {
+    background-color: #E0FFFF;
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+}
+
+.form2 {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 35em;
+}
+
+label {
+    display: block;
+}
+
+input + label {
+    display: inline-block;
+}
+
+button {
+    background-color: white;
+    padding: 0.5em 0.75em;
+}
+
+button:hover {
+    background-color: #0099CC;
+    cursor: pointer;
+    color: #fff;
+}
+
+.signup {
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: .75em;
+    width: 100%;
+}
+
+input[type="email"] {
+    padding: .75em;
+    width: 100%;
+}
+
+input[type="number"] {
+    padding: .75em;
+    width: 100%;
+}
+
+.writting {
+    width: 100%;
+}
+
+.radio {
+    white-space: nowrap;
+}
+
