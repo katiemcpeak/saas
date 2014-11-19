@@ -48,7 +48,7 @@ body {
   padding: 0;
 }
 
-p:first-child {
+.title {
   font-family: "Great Vibes", cursive;
   font-size: 2rem;
 }
@@ -102,6 +102,8 @@ figure {
     padding-right: 10rem;
     background-image: url(../images/guitarphotography.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     background-color: black;
 }
 
@@ -137,10 +139,15 @@ h3 {
     list-style-type: none;
 }
 
+.nav-top {
+    width: 100%;
+    position: absolute;
+}
+
 .nav a,
 .nav a:visited {
     display: block;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -149,8 +156,8 @@ h3 {
 .nav .nav-current,
 .nav .nav-current:link,
 .nav .nav-current:visited {
-    background-color: #E0E0E0;
-    color: #fff;
+    background-color: none;
+    color: grey;
 }
 
 .backgroundcolor {
@@ -159,8 +166,8 @@ h3 {
     text-align: center;
 }
 
-.reviews {
-    font-family: "Merriweather", serif;
+.reviews span {
+    font-family: 'Great Vibes', cursive;
 }
 
 @media only screen and (min-width: 25em) {
