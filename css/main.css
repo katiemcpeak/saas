@@ -156,8 +156,20 @@ h3 {
 .nav .nav-current,
 .nav .nav-current:link,
 .nav .nav-current:visited {
-    background-color: none;
     color: grey;
+}
+
+.navfooter li {
+        display: inline-block;
+}
+
+.navfooter li::after {
+        content:" · ";
+        color: white;
+}
+
+.social {
+    text-align: center;
 }
 
 .backgroundcolor {
@@ -166,31 +178,52 @@ h3 {
     text-align: center;
 }
 
-.reviews span {
-    font-family: 'Great Vibes', cursive;
+blockquote {
+    margin: 0;
+    padding: 0 0 0 5%;
+    overflow: hidden;
 }
 
-@media only screen and (min-width: 25em) {
+blockquote p { 
+    font-size: 0.959rem;
+}
 
-    .nav {
-        text-align: center;
+.reviews span {
+    font-family: 'Great Vibes', cursive;
+    float: right;
+    margin: 1.5rem 0;
+    padding-right: 1rem;
+}
+
+blockquote p:before {
+    content: "“";
+    font-size: 4rem;
+    color: grey;
+    float: left;
+    margin: -1rem 0 0 -2rem;
+}
+
+blockquote p:after {
+    content: "”";
+    font-size: 2rem;
+    position: absolute;
+    color: grey;
+    margin: .2rem 0 0;
+}
+
+    .copyright {
+        font-family: 'Great Vibes', cursive;
     }
+
+@media only screen and (min-width: 25em) {
     
     .nav li {
         display: inline-block;
         border: 0;
     }
     
-    .copyright {
-        text-align: center;
-    }
-    
-    .navfooter li::after {
-        content:" · ";
-    }
-    
     .navfooter a {
-        display: inline; 
+        display: inline;
     }
     
     .navfooter :last-child::after {
@@ -200,24 +233,21 @@ h3 {
     .navfooter {
         color: black;
     }
+    
 }
 
 @media only screen and (min-width: 50em) {
-    
-    .nav {
-        float: left;
-    }
     
     h1 {
         float: left;
     }
     
     .copyright {
-        text-align: left;
+        text-align: center;
     }
     
     .copyrightul {
-        float: right;
+        text-align: center;
     }
         
 }
@@ -225,6 +255,7 @@ h3 {
 @media only screen and (min-width: 60em) {
     
     .copyright {
+        margin: 0;
         text-align: left;
     }
     
@@ -246,6 +277,10 @@ h3 {
     
     dl {
         overflow: hidden;
+    }
+    
+    .social {
+        text-align: right;
     }
         
 }
@@ -309,5 +344,10 @@ input[type="number"] {
 
 .radio {
     white-space: nowrap;
+}
+
+.icons {
+    width: 40px;
+    display: inline-block;
 }
 
