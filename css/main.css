@@ -94,6 +94,10 @@ figure {
     width: 100%; 
 }
 
+.sheetmusic {
+    max-height: 30rem;
+}
+
 .billboard {
     margin: 0;
     width: 100%;
@@ -249,7 +253,6 @@ blockquote p:after {
     .copyrightul {
         text-align: center;
     }
-        
 }
 
 @media only screen and (min-width: 60em) {
@@ -282,7 +285,6 @@ blockquote p:after {
     .social {
         text-align: right;
     }
-        
 }
 
 .interested {
