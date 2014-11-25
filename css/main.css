@@ -141,6 +141,7 @@ h3 {
 .nav {
     padding: 0;
     list-style-type: none;
+    color: #fff;
 }
 
 .nav-top {
@@ -165,11 +166,6 @@ h3 {
 
 .navfooter li {
         display: inline-block;
-}
-
-.navfooter li::after {
-        content:" · ";
-        color: white;
 }
 
 .social {
@@ -219,6 +215,12 @@ blockquote p:after {
         font-family: 'Great Vibes', cursive;
     }
 
+@media only screen and (min-width: 15em) {
+    
+    h1 {
+    }
+}
+
 @media only screen and (min-width: 25em) {
     
     .nav li {
@@ -235,9 +237,8 @@ blockquote p:after {
     }
     
     .navfooter {
-        color: black;
+        color: #fff;
     }
-    
 }
 
 @media only screen and (min-width: 50em) {
