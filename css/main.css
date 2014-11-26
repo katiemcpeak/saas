@@ -81,8 +81,9 @@ a:focus {
 .logo { 
     height: 6rem;
     width: auto;
-    margin: 2rem auto;
+    margin: 15rem auto;
     margin-top: 0.2rem;
+    float: left;
 }
 
 img {
@@ -101,7 +102,6 @@ figure {
 
 .billboard {
     margin: 0;
-    padding: 20rem 0 5rem;
     width: 100%;
     overflow: hidden;
     background-image: url(../images/guitarphotography.jpg);
@@ -119,6 +119,7 @@ h1 {
     text-align: center;
     background-color: rgba(192,192,192,0.3);
     padding: .25rem 0;
+    clear: both;
 }
 
 h2 {
@@ -142,11 +143,10 @@ h3 {
     padding: 0;
     list-style-type: none;
     color: #fff;
-}
-
-.nav-top {
-    width: 100%;
     position: absolute;
+    z-index: 100;
+    text-align: right;
+    right: 0;
 }
 
 .nav a,
@@ -165,7 +165,16 @@ h3 {
 }
 
 .navfooter li {
-        display: inline-block;
+    display: inline-block;
+}
+
+.navfooter {
+    position: static;
+    text-align: center;
+}
+
+.navfooter a {
+    display: inline-block;
 }
 
 .social {
@@ -197,10 +206,10 @@ blockquote p {
 
 blockquote p:before {
     content: "“";
-    font-size: 4rem;
+    font-size: 2rem;
     color: grey;
     float: left;
-    margin: -1rem 0 0 -2rem;
+    margin: -1rem 0 0 -1rem;
 }
 
 blockquote p:after {
@@ -253,6 +262,11 @@ blockquote p:after {
     
     .copyrightul {
         text-align: center;
+    }
+    
+    blockquote p:before {
+        font-size: 4rem;
+        margin-left: -2rem;
     }
 }
 
@@ -354,3 +368,31 @@ input[type="number"] {
     display: inline-block;
 }
 
+button {
+    font-size: 1em;
+    border: 3px solid grey;
+    background-color: white;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 0.5em 0.75em;
+    align-content: center;
+}
+
+button:hover {
+    background-color: grey;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:active {
+    background-color: red;
+}
+
+.signup {
+    background-color: grey;
+}
+
+.signup-btn {
+    text-align: center;
+}
