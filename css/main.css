@@ -220,9 +220,9 @@ blockquote p:after {
     margin: .2rem 0 0;
 }
 
-    .copyright {
-        font-family: 'Great Vibes', cursive;
-    }
+.copyright {
+    font-family: 'Great Vibes', cursive;
+}
 
 @media only screen and (min-width: 25em) {
     
