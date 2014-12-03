@@ -423,7 +423,7 @@ input[type="email"] {
     font-size: 1.125em;
     font-family: serif;
     padding: 0.5em;
-    max-width: 20rem;
+    max-width: 15rem;
 }
 
 input[type="name"] {
@@ -432,7 +432,7 @@ input[type="name"] {
     font-size: 1.125em;
     font-family: serif;
     padding: 0.5em;
-    max-width: 20rem;
+    max-width: 15rem;
 }
 
 input[type="tel"] {
@@ -441,7 +441,7 @@ input[type="tel"] {
     font-size: 1.125em;
     font-family: serif;
     padding: 0.5em;
-    max-width: 20rem;
+    max-width: 15rem;
 }
 
 input[type="email"]:focus {
