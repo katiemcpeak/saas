@@ -54,6 +54,12 @@ body {
   color: white;
 }
 
+.title2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #8B4513;
+}
+
 a:focus {
  outline: 3px solid #000;   
 }
@@ -128,15 +134,16 @@ h2 {
     padding-top: 1rem;
     font-size: 2rem;
     font-family: 'Great Vibes', cursive;
+    color: #CD853F;
 }
 
 h3 {
     margin: 0;
     font-weight: normal;
     font-size: 2.5rem;
-    color: white;
+    color: #8B4513;
     text-align: center;
-    background-color: rgba(128,128,128,0.4);
+    background-color: #F5DEB3;
     padding: .25rem 0;
 }
 
@@ -182,7 +189,13 @@ h3 {
 }
 
 .backgroundcolor {
-    background-color: #E0E0E0;
+    background-color: #CD853F;
+    overflow: hidden;
+    text-align: center;
+}
+
+.backgroundcolorlight {
+    background-color: #F5DEB3;
     overflow: hidden;
     text-align: center;
 }
@@ -200,6 +213,7 @@ blockquote p {
 .reviews span {
     font-family: 'Great Vibes', cursive;
     float: right;
+    color: #CD853F;
     margin: 1.5rem 0;
     padding-right: 1rem;
 }
@@ -207,7 +221,7 @@ blockquote p {
 blockquote p:before {
     content: "“";
     font-size: 2rem;
-    color: grey;
+    color: #CD853F;
     float: left;
     margin: -1rem 0 0 -1rem;
 }
@@ -216,7 +230,7 @@ blockquote p:after {
     content: "”";
     font-size: 2rem;
     position: absolute;
-    color: grey;
+    color: #CD853F;
     margin: .2rem 0 0;
 }
 
@@ -364,9 +378,10 @@ input[type="number"] {
 
 button {
     font-size: 1em;
-    border: 3px solid grey;
+    border: 3px solid #CD853F;
     background-color: white;
     font-family: 'Great Vibes', cursive;
+    color: #CD853F;
     font-weight: bold;
     border-radius: 16px;
     padding: 0.5em 0.75em;
@@ -374,7 +389,7 @@ button {
 }
 
 button:hover {
-    background-color: grey;
+    background-color: #CD853F;
     cursor: pointer;
     color: #fff;
 }
@@ -384,9 +399,56 @@ button:active {
 }
 
 .signup {
-    background-color: grey;
+    background-color: #F5DEB3;
 }
 
 .signup-btn {
     text-align: center;
+}
+
+.pricingicons {
+    padding-top: 2rem;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.pricingtitle {
+    color: #8B4513;
+    font-size: 3rem;
+}
+
+input[type="email"] {
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 1.125em;
+    font-family: serif;
+    padding: 0.5em;
+    max-width: 20rem;
+}
+
+input[type="name"] {
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 1.125em;
+    font-family: serif;
+    padding: 0.5em;
+    max-width: 20rem;
+}
+
+input[type="tel"] {
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 1.125em;
+    font-family: serif;
+    padding: 0.5em;
+    max-width: 20rem;
+}
+
+input[type="email"]:focus {
+   outline: 3px solid brown;
+    background-color: #fff;
+}
+
+.send {
+    text-decoration: none;
 }
